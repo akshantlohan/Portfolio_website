@@ -43,6 +43,7 @@
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -232,8 +233,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-50 {
-    margin-top: calc(var(--spacing) * 50);
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -247,8 +248,23 @@
   .flex {
     display: flex;
   }
+  .aspect-\[4\/3\] {
+    aspect-ratio: 4/3;
+  }
+  .aspect-\[4\/9\] {
+    aspect-ratio: 4/9;
+  }
+  .aspect-\[16\/3\] {
+    aspect-ratio: 16/3;
+  }
+  .aspect-\[16\/9\] {
+    aspect-ratio: 16/9;
+  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -277,6 +293,12 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -290,9 +312,6 @@
   .bg-accent {
     background-color: var(--color-accent);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-paper {
     background-color: var(--color-paper);
   }
@@ -302,11 +321,14 @@
       background-color: color-mix(in oklab, var(--color-paper) 95%, transparent);
     }
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-surface {
     background-color: var(--color-surface);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -332,9 +354,6 @@
   .font-display {
     font-family: var(--font-display);
   }
-  .font-serif {
-    font-family: var(--font-serif);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -346,14 +365,6 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -391,10 +402,6 @@
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
   }
-  .tracking-wide {
-    --tw-tracking: var(--tracking-wide);
-    letter-spacing: var(--tracking-wide);
-  }
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
@@ -407,9 +414,6 @@
   }
   .text-muted {
     color: var(--color-muted);
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
   }
   .text-white {
     color: var(--color-white);
@@ -428,27 +432,8 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   @media (hover: hover) {
-    .hover\:bg-accent:hover {
-      background-color: var(--color-accent);
-    }
     .hover\:bg-accent-soft:hover {
       background-color: var(--color-accent-soft);
-    }
-    .hover\:bg-accent\/70:hover {
-      background-color: color-mix(in srgb, #0E7C54 70%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-accent\/70:hover {
-        background-color: color-mix(in oklab, var(--color-accent) 70%, transparent);
-      }
-    }
-    .hover\:bg-accent\/80:hover {
-      background-color: color-mix(in srgb, #0E7C54 80%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-accent\/80:hover {
-        background-color: color-mix(in oklab, var(--color-accent) 80%, transparent);
-      }
     }
     .hover\:bg-accent\/90:hover {
       background-color: color-mix(in srgb, #0E7C54 90%, transparent);
