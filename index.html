@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
-        content="Akshant Lohan - Independent web developer building websites and digital experiences">
-
+        content="Akshant Lohan is an independent web developer building thoughtful, responsive websites for businesses and startups.">
+    <meta name="theme-color" content="#FAF8F4">
     <title>Akshant Lohan | Independent Web Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,111 +14,220 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./src/output.css">
-
     <script src="./script.js" defer></script>
 </head>
 
-<body class="min-h-screen bg-paper font-body text-ink">
-
-    <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur-sm">
-
-        <nav
+<body class="min-h-screen bg-paper font-body text-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-line/70 bg-paper/95 backdrop-blur-sm">
+        <nav aria-label="Main navigation"
             class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-4 px-5 py-4 sm:flex-nowrap sm:px-6 sm:py-5">
-
-            <a href="#home" class="font-display text-2xl font-semibold tracking-tight">
+            <a href="#home" class="font-display text-xl font-semibold tracking-tight sm:text-2xl">
                 Akshant Lohan <span class="text-accent">.</span>
             </a>
 
             <ul
-                class="order-3 flex w-full items-center justify-between gap-3 font-body text-sm font-medium text-muted sm:order-none sm:w-auto sm:gap-8 sm:text-base">
-                <li><a href="#work" class="transition-colors hover:text-ink">Work</a></li>
-                <li><a href="#services" class="transition-colors hover:text-ink">Services</a></li>
-                <li><a href="#about" class="transition-colors hover:text-ink">About</a></li>
+                class="order-3 flex w-full items-center justify-between gap-3 font-body text-sm font-medium text-muted sm:order-none sm:w-auto sm:gap-6 sm:text-base lg:gap-8">
+                <li><a href="#work" class="transition-colors hover:text-ink focus-visible:text-ink">Work</a></li>
+                <li><a href="#services" class="transition-colors hover:text-ink focus-visible:text-ink">Services</a>
+                </li>
+                <li><a href="#about" class="transition-colors hover:text-ink focus-visible:text-ink">About</a></li>
             </ul>
 
             <a href="#contact"
-                class="rounded-lg bg-accent px-5 py-3 font-body text-sm font-medium text-white hover:bg-accent/90">
+                class="rounded-lg bg-accent px-4 py-2.5 font-body text-sm font-medium text-white transition-colors hover:bg-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-5 sm:py-3">
                 Let's talk
             </a>
-
         </nav>
-
     </header>
 
     <main>
-
-        <section id="home" class="mx-auto max-w-6xl px-6 py-28 md:py-36">
-
+        <section id="home" aria-labelledby="hero-title"
+            class="mx-auto max-w-6xl scroll-mt-28 px-6 py-24 sm:py-28 md:py-36">
             <p class="mb-6 font-body text-sm font-semibold uppercase tracking-widest text-accent">
                 Independent web developer
             </p>
-
-            <h1 class="max-w-4xl font-display text-5xl font-semibold leading-tight tracking-tight text-ink md:text-7xl">
+            <h1 id="hero-title"
+                class="max-w-4xl font-display text-5xl font-semibold leading-tight tracking-tight text-ink sm:text-6xl md:text-7xl">
                 Websites built with purpose.
             </h1>
-
             <p class="mt-6 max-w-2xl font-body text-xl leading-relaxed text-muted">
                 Designed to look sharp. Built to work beautifully.
             </p>
-
             <p class="mt-4 max-w-xl font-body text-base leading-8 text-muted">
                 I'm Akshant Lohan, an independent web developer building websites and digital experiences for businesses
                 and startups.
             </p>
-
             <div class="mt-10 flex flex-wrap items-center gap-4">
-
                 <a href="#work"
-                    class="rounded-lg bg-accent px-6 py-3 font-body text-sm font-semibold text-white transition-colors hover:bg-accent/90">
+                    class="rounded-lg bg-accent px-6 py-3 font-body text-sm font-semibold text-white transition-colors hover:bg-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
                     Explore my work
                 </a>
-
                 <a href="#contact"
-                    class="rounded-lg border border-line px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-accent-soft">
+                    class="rounded-lg border border-line px-6 py-3 font-body text-sm font-semibold text-ink transition-colors hover:bg-accent-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
                     Let's work together
                 </a>
-
             </div>
-
         </section>
 
-        <section id="work" class="bg-surface py-24 md:py-32">
-
+        <section id="work" aria-labelledby="work-title" class="scroll-mt-24 bg-surface py-20 sm:py-24 md:py-32">
             <div class="mx-auto max-w-6xl px-6">
-
-                <div class="mb-12">
-
-                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-accent">
-                        Selected Work
+                <div class="mb-12 max-w-2xl">
+                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-accent">Selected Work
                     </p>
-
-                    <h2 class="max-w-2xl font-display text-4xl font-semibold tracking-tight text-ink md:text-5xl">
+                    <h2 id="work-title" class="font-display text-4xl font-semibold tracking-tight text-ink md:text-5xl">
                         A few things I've built.
                     </h2>
-
-                    <p class="mt-5 max-w-xl font-body text-base leading-8 text-muted">
-                        A selection of websites and digital experiences I've designes and developed.
+                    <p class="mt-5 font-body text-base leading-8 text-muted">
+                        A selection of websites and digital experiences I've designed and developed.
                     </p>
-
                 </div>
 
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="overflow-hidden rounded-2xl border border-line bg-paper">
+                        <div aria-hidden="true"
+                            class="flex aspect-[16/10] flex-col justify-between bg-accent-soft p-6 sm:p-8">
+                            <span class="font-body text-xs font-semibold uppercase tracking-widest text-accent">Personal
+                                finance</span>
+                            <div>
+                                <p class="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+                                    SpendWise</p>
+                                <p class="mt-2 font-body text-sm text-muted">Track spending. Find your balance.</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <h3 class="font-display text-2xl font-semibold">SpendWise</h3>
+                                <span class="rounded-full border border-line px-3 py-1 font-body text-xs text-muted">Web
+                                    application</span>
+                            </div>
+                            <p class="mt-3 font-body text-sm leading-7 text-muted">A JavaScript expense tracker for
+                                recording and keeping an eye on everyday spending.</p>
+                            <p class="mt-4 font-body text-xs font-medium text-accent">HTML · CSS · JavaScript</p>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-2xl border border-line bg-paper">
+                        <div class="aspect-[16/10] overflow-hidden bg-[#e9e4d9]">
+                            <img src="assets/ember-oak-hero.png" alt="Preview of the Ember & Oak restaurant website"
+                                class="h-full w-full object-cover object-center" loading="lazy" width="2940"
+                                height="1682">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <h3 class="font-display text-2xl font-semibold">Ember &amp; Oak</h3>
+                                <span
+                                    class="rounded-full border border-line px-3 py-1 font-body text-xs text-muted">Restaurant
+                                    website</span>
+                            </div>
+                            <p class="mt-3 font-body text-sm leading-7 text-muted">A restaurant website with a tabbed
+                                menu interface for exploring the menu.</p>
+                            <p class="mt-4 font-body text-xs font-medium text-accent">HTML · CSS · JavaScript · Tailwind
+                                CSS</p>
+                        </div>
+                    </article>
+
+                    <article class="overflow-hidden rounded-2xl border border-line bg-paper">
+                        <div aria-hidden="true"
+                            class="flex aspect-[16/10] flex-col justify-between bg-[#e9eee8] p-6 sm:p-8">
+                            <span class="font-body text-xs font-semibold uppercase tracking-widest text-accent">SaaS ·
+                                Landing page</span>
+                            <div>
+                                <p class="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+                                    Scribble <span class="text-accent">AI</span></p>
+                                <p class="mt-2 font-body text-sm text-muted">A clear plan for every pace.</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex flex-wrap items-start justify-between gap-3">
+                                <h3 class="font-display text-2xl font-semibold">Scribble AI</h3>
+                                <span
+                                    class="rounded-full border border-line px-3 py-1 font-body text-xs text-muted">SaaS</span>
+                            </div>
+                            <p class="mt-3 font-body text-sm leading-7 text-muted">A SaaS landing page featuring a
+                                working toggle between monthly and yearly pricing.</p>
+                            <p class="mt-4 font-body text-xs font-medium text-accent">HTML · CSS · JavaScript</p>
+                        </div>
+                    </article>
+                </div>
             </div>
-
-            <article class="mt-16">
-
-                <div class="overflow-hidden rounded-2xl border border-line">
-                    <img src="assets/ember-oak-hero.png" alt="Ember and Oak restaurant website homepage"
-                        class="aspect-[16/9] w-full object-cover object-center" loading="lazy">
-                </div>
-
-            </article>
-
         </section>
 
+        <section id="services" aria-labelledby="services-title" class="scroll-mt-24 py-20 sm:py-24 md:py-32">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="mb-12 max-w-2xl">
+                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-accent">How I can help
+                    </p>
+                    <h2 id="services-title" class="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+                        Thoughtful websites, from first draft to launch.</h2>
+                </div>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="rounded-2xl border border-line bg-surface p-6 sm:p-8">
+                        <span class="font-display text-2xl text-accent">01</span>
+                        <h3 class="mt-8 font-display text-2xl font-semibold">Website development</h3>
+                        <p class="mt-3 font-body text-sm leading-7 text-muted">Purpose-built websites shaped around your
+                            content, goals, and audience.</p>
+                    </article>
+                    <article class="rounded-2xl border border-line bg-surface p-6 sm:p-8">
+                        <span class="font-display text-2xl text-accent">02</span>
+                        <h3 class="mt-8 font-display text-2xl font-semibold">Website redesign</h3>
+                        <p class="mt-3 font-body text-sm leading-7 text-muted">A considered refresh to make an existing
+                            website clearer, more modern, and easier to use.</p>
+                    </article>
+                    <article class="rounded-2xl border border-line bg-surface p-6 sm:col-span-2 sm:p-8 lg:col-span-1">
+                        <span class="font-display text-2xl text-accent">03</span>
+                        <h3 class="mt-8 font-display text-2xl font-semibold">Responsive development</h3>
+                        <p class="mt-3 font-body text-sm leading-7 text-muted">Responsive websites for businesses and
+                            startups, designed to work smoothly across devices.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-title" class="scroll-mt-24 bg-surface py-20 sm:py-24 md:py-32">
+            <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
+                <div>
+                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-accent">A little about
+                        me</p>
+                    <h2 id="about-title" class="font-display text-4xl font-semibold tracking-tight md:text-5xl">Hi, I'm
+                        Akshant.</h2>
+                </div>
+                <div class="max-w-2xl">
+                    <p class="font-body text-lg leading-8 text-muted">I'm Akshant Lohan, an independent web developer
+                        interested in building clean, modern and functional digital experiences.</p>
+                    <p class="mt-5 font-body text-lg leading-8 text-muted">I focus on creating websites that look
+                        professional and work well across devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-title" class="scroll-mt-24 py-20 sm:py-24 md:py-32">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="rounded-3xl bg-accent px-6 py-12 text-white sm:px-10 sm:py-16 md:px-16">
+                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-white/75">Contact</p>
+                    <h2 id="contact-title"
+                        class="max-w-3xl font-display text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+                        Have a project in mind?</h2>
+                    <p class="mt-5 max-w-xl font-body text-base leading-8 text-white/85">I'd be glad to hear what you're
+                        working on and explore how I can help.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="border-t border-line">
+        <div class="mx-auto flex max-w-6xl flex-col gap-5 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+            <a href="#home" class="font-display text-lg font-semibold">Akshant Lohan <span
+                    class="text-accent">.</span></a>
+            <nav aria-label="Footer navigation" class="flex flex-wrap gap-x-5 gap-y-2 font-body text-sm text-muted">
+                <a href="#work" class="transition-colors hover:text-ink">Work</a>
+                <a href="#services" class="transition-colors hover:text-ink">Services</a>
+                <a href="#about" class="transition-colors hover:text-ink">About</a>
+                <a href="#contact" class="transition-colors hover:text-ink">Contact</a>
+            </nav>
+            <p class="font-body text-xs text-muted">© <span id="current-year">2026</span> Akshant Lohan</p>
+        </div>
+    </footer>
 </body>
 
 </html>
