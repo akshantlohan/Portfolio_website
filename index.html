@@ -211,15 +211,64 @@
         </section>
 
         <section id="contact" aria-labelledby="contact-title" class="scroll-mt-24 py-20 sm:py-24 md:py-32">
-            <div class="mx-auto max-w-6xl px-6">
-                <div class="rounded-3xl bg-accent px-6 py-12 text-white sm:px-10 sm:py-16 md:px-16">
-                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-white/75">Contact</p>
+            <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-[0.85fr_1.15fr] md:gap-14 lg:gap-20">
+                <div class="max-w-xl md:py-4">
+                    <p class="mb-4 font-body text-sm font-semibold uppercase tracking-widest text-accent">Contact</p>
                     <h2 id="contact-title"
-                        class="max-w-3xl font-display text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+                        class="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl md:text-6xl">
                         Have a project in mind?</h2>
-                    <p class="mt-5 max-w-xl font-body text-base leading-8 text-white/85">I'd be glad to hear what you're
-                        working on and explore how I can help.</p>
+                    <p class="mt-5 font-body text-base leading-8 text-muted">I'd be glad to hear what you're working on
+                        and explore how I can help.</p>
                 </div>
+
+                <form action="https://formspree.io/f/FORM_ID" method="POST"
+                    aria-label="Project inquiry form"
+                    class="rounded-2xl border border-line bg-surface p-6 sm:p-8">
+                    <!-- Replace FORM_ID with your Formspree form ID before enabling submissions. -->
+                    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                        <div>
+                            <label for="contact-name" class="mb-2 block font-body text-sm font-medium text-ink">Name <span
+                                    class="text-accent" aria-hidden="true">*</span></label>
+                            <input id="contact-name" name="name" type="text" autocomplete="name" required
+                                placeholder="Your name"
+                                class="w-full rounded-lg border border-line bg-paper px-4 py-3 font-body text-sm text-ink placeholder:text-muted/70 transition-colors duration-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20">
+                        </div>
+
+                        <div>
+                            <label for="contact-email" class="mb-2 block font-body text-sm font-medium text-ink">Email <span
+                                    class="text-accent" aria-hidden="true">*</span></label>
+                            <input id="contact-email" name="email" type="email" autocomplete="email" required
+                                placeholder="you@example.com"
+                                class="w-full rounded-lg border border-line bg-paper px-4 py-3 font-body text-sm text-ink placeholder:text-muted/70 transition-colors duration-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20">
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label for="contact-project-type" class="mb-2 block font-body text-sm font-medium text-ink">Project type <span
+                                    class="font-normal text-muted">(optional)</span></label>
+                            <select id="contact-project-type" name="project_type"
+                                class="w-full rounded-lg border border-line bg-paper px-4 py-3 font-body text-sm text-ink transition-colors duration-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20">
+                                <option value="">Choose a project type</option>
+                                <option value="New website">New website</option>
+                                <option value="Website redesign">Website redesign</option>
+                                <option value="Landing page">Landing page</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label for="contact-details" class="mb-2 block font-body text-sm font-medium text-ink">Project details <span
+                                    class="text-accent" aria-hidden="true">*</span></label>
+                            <textarea id="contact-details" name="message" rows="5" required
+                                placeholder="Tell me a little about your project, goals, and timing."
+                                class="w-full resize-y rounded-lg border border-line bg-paper px-4 py-3 font-body text-sm leading-7 text-ink placeholder:text-muted/70 transition-colors duration-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="mt-6 inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 font-body text-sm font-semibold text-white transition-colors duration-200 hover:bg-accent/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+                        Send project inquiry
+                    </button>
+                </form>
             </div>
         </section>
     </main>
